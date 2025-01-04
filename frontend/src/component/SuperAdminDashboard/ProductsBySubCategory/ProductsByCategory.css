@@ -1,0 +1,17 @@
+.backtocategoryButton:hover{
+    border-color: #00d5cd !important;
+    background-color: white !important;
+    color: black !important;
+}
+.action-buttons.delete:hover {
+    background-color: red; /* Background turns red on hover */
+    color: white; /* Text turns white on hover */
+}
+.action-buttons.edit:hover {
+    background-color: blue;
+    color: white; /* Text turns white on hover */
+}
+.action-buttons.view:hover {
+    background-color: #00d5cd;
+    color: white; /* Text turns white on hover */
+}

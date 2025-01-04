@@ -1,0 +1,23 @@
+.hero-section {
+    background-color: white !important;
+}
+  
+.stats-card {
+    width: 120px;
+    text-align: center;
+}
+  
+.text-primary {
+    color: #00d5cd !important;
+}
+.Discuss_button{
+ background-color: #00d5cd;
+ color: white;
+}
+.Discuss_button:hover{
+    background-color:#6c9d9b ;
+    color: white;
+}
+.HeroContainer{
+    margin-top: 60px !important;
+}

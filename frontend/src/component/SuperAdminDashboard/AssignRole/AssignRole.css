@@ -1,0 +1,14 @@
+.submit_button:hover{
+    color: white !important;
+}
+.back-arrow{
+    border: transparent;
+    background-color: transparent;
+    color: rgba(103, 219, 152, 0.897);;
+    /* padding-right: 2rem; */
+    /* width: 3rem; */
+    font-size:large;
+}
+.back-arrow:hover{
+    color: #00d5cd;
+}

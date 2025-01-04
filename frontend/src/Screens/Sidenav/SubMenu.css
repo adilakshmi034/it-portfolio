@@ -1,0 +1,143 @@
+.sidebar-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: black !important;
+  background-color: white !important;
+  font-size: 18px;
+  border-left: 5px solid transparent;
+}
+
+.sidebar-link:hover {
+  border-left: 5px solid #00d5cd !important;
+}
+
+.sidebar-link.active {
+  background-color: #ddd;
+  color: #000;
+  border-left: 5px solid #00d5cd;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  background-color: white !important;
+  color: black !important;
+  padding-left: 30px;
+}
+
+.dropdown-link:hover {
+  background-color: #00d5cd !important;
+  color: white !important;
+}
+
+.dropdown-link.active {
+  background-color: #00d5cd !important;
+  color: white !important;
+}
+
+.subnav {
+  padding-left: 20px;
+  display: block;
+}
+
+/* .sidebar-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: black !important;
+  background-color: white !important;
+  font-size: 18px;
+  border-left: 5px solid transparent;
+}
+
+.sidebar-link:hover {
+  border-left: 5px solid #00d5cd !important;
+}
+
+.sidebar-link.active {
+  background-color: #ddd;
+  color: #000;
+  border-left: 5px solid #00d5cd;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  background-color: white !important;
+  color: black !important;
+  padding-left: 30px;
+}
+
+.dropdown-link:hover {
+  background-color: #00d5cd !important;
+  color: white !important;
+}
+
+.dropdown-link.active {
+  background-color: #00d5cd !important;
+  color: white !important;
+} */
+
+.subnav {
+  padding-left: 20px;
+  display: block;
+}
+
+.submenu-item {
+  padding-left: 20px;
+}
+
+.submenu-nested {
+  padding-left: 40px;
+}
+.sidebar-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  text-decoration: none;
+  color: black !important;
+  background-color: white !important;
+  border-bottom: black;
+
+}
+
+.dropdown-link:hover {
+  background-color: #00d5cd !important;
+}
+
+/* Styling for the sidebar link when hovered */
+.sidebar-link:hover,
+.sidebar-link.active {
+  border-left: 5px solid #00d5cd !important;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  text-decoration: none;
+  background-color: white !important;
+  color: black !important;
+  padding-left: 30px; /* Indent submenu items */
+}
+
+.dropdown-link.active {
+  background-color: #00d5cd !important; /* Change to your active background color */
+  color: white !important; /* Change to your active text color */
+}
+.subnav {
+  padding-left: 20px; /* Indent for dropdown items */
+  display: block; /* Ensure it shows when toggled */
+}

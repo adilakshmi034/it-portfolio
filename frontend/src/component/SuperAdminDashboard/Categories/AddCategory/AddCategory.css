@@ -1,0 +1,23 @@
+.suggestions-lists {
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 5px;
+    padding: 0;
+    list-style: none;
+    position: absolute; /* Ensure it's positioned relative to the input field */
+    background-color: #fff;
+    width: 100%;
+    z-index: 1050; /* Set a high z-index to overlay other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  }
+  
+  .suggestions-lists li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestions-lists li:hover {
+    background-color: #f0f0f0;
+  }
+  

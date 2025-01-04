@@ -1,0 +1,278 @@
+.ProductCard-shadow {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2) !important; 
+    transition: transform 0.3s ease !important; 
+}
+
+.ProductCard-shadow:hover {
+    transform: translateY(-5px) !important; 
+}
+.BuyNowButton{
+    background-color: #00d5cd;
+    color: white;
+}
+.BuyNowButton:hover{
+    background-color: #008e87;
+    color: white;   
+}
+.productdescription {
+    height: 100px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 4 !important; 
+    line-clamp: 4 !important; 
+    -webkit-box-orient: vertical; 
+    margin-bottom: 10px;
+}
+
+/* Add some styles to make the carousel look nice */
+.carousel-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust spacing between cards */
+    padding-right: 0;
+}
+
+.ProductCard {
+    flex: 1 1 calc(100% / 4 - 1rem);
+    max-width: calc(100% / 4 - 1rem);
+    box-sizing: border-box;
+}
+.read_more {
+    color: #61b1f1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .read_more:hover {
+    color: #488ad6;
+  }
+  
+  .read_less {
+    color: #0f60bd;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .read_less:hover {
+    color: #1d4f8c;
+  }
+  
+
+@media (max-width: 1200px) {
+    .ProductCard {
+        flex: 1 1 calc(100% / 3 - 1rem);
+        max-width: calc(100% / 3 - 1rem);
+    }
+}
+
+@media (max-width: 992px) {
+    .ProductCard {
+        flex: 1 1 calc(100% / 2 - 1rem);
+        max-width: calc(100% / 2 - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .ProductCard {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+/* 
+
+.ProductCard {
+    flex-shrink: 0;
+    width: 280px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; 
+    background-color: #343a40; 
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.carousel-arrow:hover {
+    background-color: #00d5cd; 
+    transform: scale(1.1); 
+} */
+
+/* .left-arrow {
+    left: -60px;
+}
+
+.right-arrow {
+    right: -60px;
+}
+
+@media (max-width: 576px) {
+    .left-arrow {
+        left: -30px;
+    }
+
+    .right-arrow {
+        right: -30px;
+    }
+} */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background-color: #08d494;
+    color: white;
+    /* border: 2px solid #08d494; */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-arrow:hover {
+    /* border-color: #08996b;  */
+    background-color: #08996b; 
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* Ensure carousel container doesn't hide overflow */
+.carousel-container {
+    position: relative;
+    overflow: visible; /* Ensure arrows are visible outside the container */
+}
+
+.ProductCardImage {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Ensure buttons are visible on the sides */
+.carousel-control-prev, .carousel-control-next {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+.left-arrows{
+    left:-57px;
+}
+.right-arrows{
+    right: -57px;
+}
+
+/* Skeleton Product Card */
+.ProductCard-skeletons {
+    height: 100%; /* Ensures the card takes full height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    background-color: rgba(228, 225, 225, 0.801);
+    border: 1px solid rgba(202, 202, 202, 0.774);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Skeleton components */
+  .skeleton-images {
+    height: 200px; /* Same height as ProductCard image */
+    width: 100%;
+    background-color: #f0f0f0; /* Light gray background for skeleton */
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .skeleton-title {
+    height: 50px;
+    width: 60%;
+    background-color: #61616159;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+  }
+  
+  .skeleton-descriptions {
+    height: 60px;
+    width: 90%;
+    background-color: #50505038;
+    margin-left: 15px;
+    border-radius: 5px;
+  }
+  
+  .skeleton-prices {
+    height: 20px;
+    width: 40%;
+    background-color: #68686838;
+    margin: 10px 0px 5px 15px;
+    border-radius: 5px;
+  }
+  
+  .skeleton-buttons {
+    height: 40px;
+    width: 90%;
+    background-color: #00d5cd;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Skeleton Arrows to Match Real Arrows */
+.skeleton-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background-color: rgba(8, 212, 148, 0.2); /* Light green background */
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: pulse 1.5s infinite ease-in-out; /* Pulse effect */
+  }
+  
+
+  /* Skeleton Arrow Hover Effect */
+  .skeleton-arrow:hover {
+    background-color: rgba(8, 153, 107, 0.2); /* Darker green */
+    transform: scale(1.1);
+  }
+  
+  /* Pulse animation for skeleton arrows */
+  @keyframes pulse {
+    0% {
+      background-color: rgba(8, 212, 148, 0.2);
+    }
+    50% {
+      background-color: rgba(8, 153, 107, 0.2);
+    }
+    100% {
+      background-color: rgba(8, 212, 148, 0.2);
+    }
+  }
+  

@@ -1,0 +1,43 @@
+.submit_btn {
+    position: relative;
+    border: 2px solid #00d5cd;
+    color: #00d5cd;
+    border-radius: 15px;
+    padding: 0.75rem 1.25rem;
+    font-size: 2rem;
+    font-weight: 500;
+    z-index: 1;
+    overflow: hidden;
+    transition: box-shadow 0.4s ease, color 0.4s ease; /* Smooth transition for shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .submit_btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    border-radius: 50%;
+    background-color: #00d5cd !important;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s ease; /* Radial fill animation */
+    z-index: 0;
+    
+  }
+  
+  .submit_btn:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Radial fill expands */
+  }
+  
+  .submit_btn:hover {
+    color: #fff !important; /* Text turns white */
+    background-color: #00d5cd !important;
+  }
+  
+  .submit_btn span {
+    position: relative;
+    z-index: 1; /* Keep text on top */
+  }
+  

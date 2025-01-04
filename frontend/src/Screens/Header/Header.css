@@ -1,0 +1,98 @@
+/* Header styling */
+.header {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+}
+
+/* Full logo styling */
+.full-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+}
+
+/* Navigation styling */
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* User profile section */
+.user-profile {
+  display: flex;
+  align-items: center;
+  
+}
+/* Active and Hover effect */
+.profile-button:hover, .LogoutBtn:hover {
+  background-color: #00d5cd !important;
+  color: white; /* Change color on hover */
+}
+
+.LogoutBtn.active, .profile-button.active {
+  background-color:#00d5cd !important; /* Background color when active */
+  color: white; /* Text color when active */
+}
+
+.user-info {
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+/* Admin icon styling */
+.admin-iconss {
+  font-size: 28px;
+  cursor: pointer;
+  color: #00d5cd;
+  position: relative !important;
+}
+
+.admin-icon:hover {
+  color: #008b84;
+}
+
+
+.admin-icon {
+  cursor: pointer;
+  font-size: 24px;
+  /* margin-right: 15px; */
+}
+/* Header.css */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+/* Optional: Add some styles for button hover effect */
+.toggle-button:hover {
+  color: #00d5cd; /* Change color on hover */
+}

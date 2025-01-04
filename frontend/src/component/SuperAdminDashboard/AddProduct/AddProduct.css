@@ -1,0 +1,89 @@
+.Addproduct-container {
+  width: 50% !important;
+  overflow-y: auto;
+  margin-top: 100px; 
+  margin-bottom: 20px;
+  padding-right: 10px; /* Prevents content from hiding behind the scrollbar */
+  padding-left: 10px;
+}
+.form-select:focus {
+  border-color: #00d5cd !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 213, 205, 0.25) !important;
+  color: #000  !important;
+}
+.Add-buttons{
+  background-color: #00d5cd;
+  color: white;
+}
+.AddBtn{
+  margin-top: 33px;
+  border:1px solid #00d5cd;
+  background-color: transparent;
+}
+.AddBtn:hover{
+  border:1px solid #0e9e99 !important;
+}
+.AddBtn:active, .AddBtn:focus{
+  background-color: #00d5cd !important;
+  color: white;
+}
+
+/* Style for the dropdown itself */
+.form-select {
+  background-color: white;
+  color: #333; /* Default text color */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+
+/* Custom styles for the scrollbar */
+/* .Addproduct-container::-webkit-scrollbar {
+  width: 12px; 
+}
+
+.Addproduct-container::-webkit-scrollbar-track {
+  background: #f1f1f1 !important; 
+}
+
+.Addproduct-container::-webkit-scrollbar-thumb {
+  background: #00d5cd !important; 
+}
+
+.Addproduct-container::-webkit-scrollbar-thumb:hover {
+  background: #c4c3d0 !important;
+} */
+
+h2 {
+  font-weight: bold;
+}
+/* #category-select {
+  background-color: #ffffff;
+}
+
+#category-select:hover {
+  background-color: #00d5cd !important; 
+  color: white; 
+}
+
+
+#category-select option {
+  background-color: white; 
+}
+
+#category-select option:hover {
+  background-color: #00d5cd !important;
+  color: white; 
+} */
+
+.form {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 360px !important; /* Set width to ensure form fits well */
+}
+
+button {
+  font-size: 1.1rem; /* Button font size */
+}

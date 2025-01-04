@@ -1,0 +1,106 @@
+/* Navbar styling */
+.navbar {
+    background-color: white !important;
+    height: 80px; /* Fixed height for the header */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Center items vertically */
+  }
+  
+  /* Menu bars styling */
+  .menu-bars {
+    margin-left: 2rem; 
+    font-size: 2rem; 
+    background: none; 
+  }
+  
+  /* Sidebar styling */
+  .nav-menu {
+    position: sticky;
+    top: 5rem;
+    left: 0%;
+    background-color: white !important; 
+    color: black !important; 
+    height: calc(100vh - 80px) !important; 
+    display: flex;
+    flex-direction: column; 
+    overflow-y: auto; 
+    z-index: 1000; 
+    transition: width 0.3s ease; 
+  }
+  
+  /* Sidebar collapsed state */
+  .nav-menu.collapsed {
+    width: 5%; 
+  }
+  
+  /* Sidebar items styling */
+  .nav-menu-items {
+    width: 100%; /* Full width for sidebar items */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex; /* Use flexbox for items layout */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  /* Navbar toggle button styling */
+  .navbar-toggle {
+    background-color: #00d5cd;
+    width: 100%;
+    height: 80px;
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+  }
+  
+  /* Sidebar item styling */
+  .nav-menu-items .submenu {
+    width: 100%;
+    display: flex; 
+    justify-content: flex-start; 
+    padding: 10px; 
+    transition: opacity 0.3s ease; 
+  }
+  
+  /* Show icons only when collapsed */
+  .nav-menu.collapsed .submenu .text {
+    display: none;
+  }
+  
+  .nav-menu .submenu .icon {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  /* Icon styling */
+  .nav-menu-items .submenu .icon {
+    font-size: 1.5rem; 
+  }
+  
+  /* Media query for responsive sidebar */
+  @media (width: 1024px) {
+    .nav-menu {
+      width: 20% !important;
+    }
+  
+    .nav-menu.collapsed {
+      width: 5% !important; 
+    }
+  }
+  @media (min-width: 768px) and (max-width:1024px) {
+    .nav-menu.collapsed {
+      width: 7%; 
+    }
+  }
+  @media (max-width: 540px) {
+    .nav-menu.collapsed {
+      width: 0%;
+    }
+  }
+  @media (min-width: 550px) and (max-width:767px) {
+    .nav-menu.collapsed {
+      width: 10%; 
+    }
+  }

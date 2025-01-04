@@ -1,0 +1,61 @@
+
+/* Prevent horizontal scrolling */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Wrapper for the entire dashboard */
+.dashboard-wrapper {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem; /* Adjust based on your header height */
+  z-index: 1000;
+  background-color: #ffffff; /* Optional */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional */
+}
+
+/* Content Wrapper - contains both the sidebar and the main content */
+.content-wrapper {
+  display: flex;
+  margin-top: 5rem; /* Match the height of the fixed header */
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidenav {
+  width: 20%; /* Adjust based on your collapsed/expanded logic */
+  transition: width 0.3s ease;
+}
+
+.sidenav-collapsed {
+  width: 10%; /* Adjust for collapsed state */
+}
+
+.sidenav-expanded {
+  width: 20%; /* Adjust for expanded state */
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  min-width: 0; /* Prevent flex item from growing beyond its container */
+  padding: 10px;
+  background-color: #f8f9fa; /* Match your desired background color */
+}
+
+/* Ensure no unwanted overflow */
+* {
+  box-sizing: border-box;
+}

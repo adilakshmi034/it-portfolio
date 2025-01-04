@@ -1,0 +1,110 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f4f4f4;
+}
+
+.table-img {
+  width: 100px;
+  height: auto;
+}
+
+.discount-prices {
+  color: red;
+}
+
+.table-container {
+  max-height: calc(100vh - 200px); /* You can adjust this value as needed */
+  overflow-y: auto;  /* Enable vertical scrollbar */
+}
+
+.page-item.disabled .page-link {
+  pointer-events: none;
+  background-color: #f5f5f5;
+  color: #d3d3d3 !important;
+}
+
+.action-buttons {
+  background: white; /* Set the background to white */
+  border: 2px solid transparent; /* Default border to transparent */
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1.2rem;
+  transition: border-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.action-buttons.edit-button {
+  color: #007bff; /* Blue color for edit icon */
+  border: 2px solid transparent; /* Initially transparent border */
+}
+
+.action-buttons.edit-button:hover {
+  color: #007bff; /* Keep text color blue on hover */
+}
+
+.action-buttons.delete-button {
+  color: red; /* Red color for delete icon */
+  border: 2px solid transparent; /* Initially transparent border */
+}
+
+.action-buttons.delete-button:hover {
+  color: red; 
+}
+
+/* Maintain the icon color when hovered */
+.edit-icon:hover {
+  color: #007bff;
+}
+
+.delete-icon:hover {
+  color: red; 
+}
+.role-button{
+  color: #00d5cd;
+}
+.role-button:hover, .role-button:active{
+  color: #00d5cd;
+  background-color: transparent !important;
+  border-color: #00d5cd;
+  border:2px solid #00d5cd;
+}
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #00d5cd !important;
+  color: white;
+}
+/* .table-scrollables {
+  position: relative;
+  max-height: 550px;
+  overflow-y: auto;
+} */
+/* .table-scrollables table thead {
+  position: sticky;
+  top: 0;
+}
+.table-horizantal-scrollables{
+  overflow-x: auto;
+} */
+/* .dropdown-menu {
+  z-index: 1050; 
+} */
+/* Ensure the container aligns properly */
+.ellipsis-dropdown {
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center;    /* Center the icon vertically */
+  position: relative;     /* Keep relative positioning for dropdown alignment */
+}
+/* Optional: Adjust the dropdown menu position for better alignment */
+.dropdown-menu {
+  margin-top: 5px; /* Add spacing between icon and menu */
+  min-width: 200px; /* Ensure consistent menu width */
+}

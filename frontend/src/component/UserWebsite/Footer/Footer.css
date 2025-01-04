@@ -1,0 +1,160 @@
+.footer {
+  background-color: #343a40;
+  /* Dark background */
+}
+
+.footer-logo {
+  width: 50%;
+}
+
+.social-icons a {
+  font-size: 24px;
+  /* Increase icon size */
+}
+
+.content-footer {
+  width: 50%;
+ }
+
+.social-media-heading {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  /* Align heading to left for larger screens */
+  margin-bottom: 10px;
+}
+.social-media-heading {
+  text-align: center;
+  /* Center the social media heading */
+}
+
+/* Center the address section */
+.footer .row .col-12.col-md-4 {
+  text-align: center;
+}
+
+.ContactUs {
+  display: flex;
+  align-items: center;
+}
+.footer .container {
+  text-align: center;
+
+}
+
+/* Align social media icons in a row and center them on small screens */
+.social-icons {
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #343a40;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+}
+
+.scroll-to-top .scroll-text {
+  display: none;
+}
+
+.scroll-to-top:hover .scroll-text {
+  display: inline-block;
+  margin-left: 8px;
+  /* Space between icon and text */
+}
+
+.scroll-to-top .scroll-icon {
+  font-size: 24px;
+  padding: 9px;
+}
+
+/* Tooltip Styles */
+.scroll-to-top .tooltip-text {
+  display: none;
+  position: absolute;
+  top: -30px;
+  /* Position the tooltip above the button */
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #555;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* Show tooltip on hover */
+.scroll-to-top:hover .tooltip-text {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Center all footer content on small screens */
+  .footer .container {
+    text-align: center;
+
+  }
+
+  /* Align social media icons in a row and center them on small screens */
+  .social-icons {
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+    
+  }
+
+  .social-media-heading {
+    text-align: center;
+    /* Center the social media heading */
+  }
+
+  /* Center the address section */
+  .footer .row .col-12.col-md-4 {
+    text-align: center;
+  }
+
+  .ContactUs {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (width:853px) and (width:912px) {
+  .footer-logo {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+/* @media(min-width:769px){
+  .content-footer {
+    width: 50%;
+   }
+} */

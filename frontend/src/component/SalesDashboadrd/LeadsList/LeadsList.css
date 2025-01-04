@@ -1,0 +1,117 @@
+/* LeadsList.css */
+.leads-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-group select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.leads-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.leads-table th, .leads-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.leads-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+.leads-table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.leads-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.leads-table tr:last-child td {
+  border-bottom: none;
+}
+
+.leads-table .action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+.leads-table .action-button.view {
+  color: #28a745;
+}
+
+.leads-table .action-button:hover {
+  opacity: 0.8;
+}
+
+.leads-table .action-button.view:hover {
+  color: darkgreen; 
+}
+.leads-table .action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+.leads-table .action-button.view {
+  color: #00d5cd;
+}
+
+.leads-table .action-button.edit {
+  color: #007bff;
+}
+
+.leads-table .action-button.delete {
+  color: red;
+}
+
+.leads-table .action-button:hover {
+  opacity: 0.8;
+}
+
+.leads-table .action-button.delete:hover {
+  color: darkred;
+}
+.swal-input-custom{
+  box-shadow: 0px 4px 8px rgba(0, 213, 205, 0.4) !important;
+  border: 1px solid #00d5cd;
+  border-radius: 4px;
+  padding: 8px;
+}

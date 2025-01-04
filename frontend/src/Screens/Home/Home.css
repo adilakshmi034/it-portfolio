@@ -1,0 +1,99 @@
+src/HomePage.css
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 85px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.get-started {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.user-reviews {
+  margin-top: 20px;
+}
+
+.user-avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-text {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.image-content img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.main-page {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+.sub-page {
+  flex-grow: 1;
+  padding: 20px;
+}

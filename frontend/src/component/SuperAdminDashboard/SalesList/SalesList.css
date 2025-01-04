@@ -1,0 +1,333 @@
+.saleslists {
+    /* padding: 20px; */
+    /* max-width: 60% !important; */
+    /* width:80%; */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.filter-card {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1; /* Ensures the filter cards grow evenly */
+    justify-content: space-evenly; /* Distributes even space between search bars */
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Ensures even distribution across all filter cards */
+}
+
+.filter-group input, .filter-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%; /* Ensure inputs take full width of their container */
+}
+
+/* Table Header Actions */
+.table-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.search-add-actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px 40px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.search-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.search-icon {
+    color: #aaa;
+    pointer-events: none;
+}
+
+/* Action Dropdown Button */
+.dropdown-action-button {
+    position: relative;
+    display: inline-block;
+}
+
+.action-button {
+    cursor: pointer;
+    margin: 0 50px;
+    padding: 8px;
+    width: auto;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.action-buttons {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1.2rem;
+}
+
+.action-buttons.edit {
+    color: #007bff;
+}
+
+.action-buttons.delete {
+    color: red;
+}
+
+.action-buttons.view {
+    color: #00d5cd;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-action-button:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content button {
+    padding: 12px 16px;
+    text-align: left;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown-content button:hover {
+    background-color: #00d5cd;
+    color: white;
+}
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+}
+
+.page-link {
+    color: #fff; /* Text color for the pagination links */
+    background-color: #00d5cd; /* Background color for normal pagination links */
+    border: none; /* Remove default border */
+    margin: 0 5px; /* Spacing between buttons */
+}
+
+.page-link:hover {
+    background-color: #fff; /* Background color on hover */
+    color: #00d5cd !important; /* Text color on hover */
+}
+
+.page-item.active .page-link {
+    background-color: #00d5cd; /* Active page background color */
+    color: #fff; /* Text color for active page */
+}
+
+/* Add hover effect for the active page */
+.page-item.active:hover .page-link {
+    background-color: #fff; /* Background color when hovering over the active page */
+    color: #00d5cd !important; /* Text color when hovering over the active page */
+}
+
+.page-item.disabled .page-link {
+    background-color: #6c757d; /* Background color for disabled page */
+    color: #fff; /* Text color for disabled page */
+    cursor: not-allowed; /* Not-allowed cursor for disabled page */
+}
+
+.page-item .page-link:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #00d5cd; /* Add shadow on focus */
+}
+
+
+/* Page Length Dropdown */
+.page-length-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position:relative
+}
+
+.page-length-dropdown .dropdown-toggle {
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: auto;
+    flex-grow: 1;
+    font-weight: 200 !important;
+    background-color: white;
+    cursor: pointer;
+}
+
+.page-length-dropdown .dropdown-icon {
+    cursor: pointer;
+    font-size: 16px; /* Size of the dropdown icon */
+}
+
+/* Admin Table */
+.table-scrollable {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sales-table th, .sales-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sales-table th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.sales-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    background-color: #00d5cd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination span {
+    font-size: 1rem;
+}
+
+.saleslist {
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.page-length-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    padding: 10px;
+    border: 1px solid #ccc; /* Change this to match your input borders */
+    background-color: #f9f9f9; /* Change this to match your input background */
+    color: #333; /* Change this to match your input text color */
+    border-radius: 5px; /* Rounded corners for uniformity */
+    cursor: pointer;
+    width: auto; /* Keep the width auto */
+}
+
+.dropdown-options {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-option:hover {
+    background-color: #f1f1f1; /* Add hover effect */
+}
+.Sales_ID{
+    width: 5%;
+}
+.sales_FullName{
+    width: 25%;
+}
+.sales_Email{
+    width: 25%;
+}
+.sales_Mobile{
+    width: 15%;
+}
+.sales_Role{
+    width: 10%;
+}
+.sales_Actions{
+    width: 15%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .saleslist {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filter-card {
+        flex-direction: column;
+        gap: 15px; /* Keeps even space between search inputs on smaller screens */
+    }
+
+    .table-header-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-length-dropdown {
+        margin-top: 10px;
+    }
+}

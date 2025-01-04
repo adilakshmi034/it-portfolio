@@ -1,0 +1,109 @@
+/* Navbar styling */
+.navbar {
+  background-color: white !important;
+  height: 80px; /* Fixed height for the header */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Center items vertically */
+}
+
+/* Menu bars styling */
+.menu-bars {
+  margin-left: 2rem; /* Margin for menu bars */
+  font-size: 2rem; /* Font size for menu bars */
+  background: none; /* Remove background */
+}
+
+/* Sidebar styling */
+.nav-menu {
+  position: static !important;
+  background-color:white !important; /* Background color for sidebar */
+  color: black !important; /* Text color for sidebar */
+  height: calc(100vh - 80px) !important; /* Full height minus the header height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  overflow-y: auto; /* Enable vertical scrolling */
+  z-index: 1000; /* Ensure it is above other elements */
+  transition: width 0.3s ease; /* Smooth transition for width changes */
+}
+
+/* Sidebar collapsed state */
+.nav-menu.collapsed {
+  width: 5%; /* Width when collapsed, showing only icons */
+}
+
+/* Sidebar items styling */
+.nav-menu-items {
+  width: 100%; /* Full width for sidebar items */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex; /* Use flexbox for items layout */
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Navbar toggle button styling */
+.navbar-toggle {
+  background-color: #00d5cd;
+  width: 100%;
+  height: 80px;
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+}
+
+/* Sidebar item styling */
+.nav-menu-items .submenu {
+  width: 100%;
+  display: flex; 
+  justify-content: flex-start; 
+  padding: 10px; 
+  transition: opacity 0.3s ease; 
+}
+
+/* Show icons only when collapsed */
+.nav-menu.collapsed .submenu .text {
+  display: none;
+}
+
+.nav-menu .submenu .icon {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Icon styling */
+.nav-menu-items .submenu .icon {
+  font-size: 1.5rem; 
+}
+.nav-menu-items .submenu:hover{
+  background-color: #00d5cd;
+  color: white;
+}
+/* Media query for responsive sidebar */
+@media (width: 1024px) {
+  .nav-menu {
+    width: 20% !important;
+  }
+
+  .nav-menu.collapsed {
+    width: 5% !important; 
+  }
+}
+@media (width: 768px) {
+  .nav-menu.collapsed {
+    width: 7%; 
+  }
+}
+/* @media (max-width:767px) {
+  .nav-menu.collapsed {
+    width: 0%;
+  }
+} */
+@media(max-width:576px){
+  .nav-menu.collapsed {
+    width: 0% !important;
+  }
+}
+
+

@@ -1,0 +1,247 @@
+/* General Layout */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Logo Section */
+.login-header {
+  text-align: center !important;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  margin-bottom: 1rem;
+  width: 80px; /* Set width of the logo */
+}
+
+/* Input Fields */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.form-group input:focus {
+  border-color: #00d5cd;
+  box-shadow: 0 0 8px rgba(0, 213, 205, 0.4); /* Soft box-shadow */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Password Visibility Toggle */
+/* .password-group {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #888;
+} */
+.input-group-append{
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+.toggle-password:hover {
+  color: #333; /* Darker color on hover */
+}
+.font-size-12{
+  font-size: 12px;
+}
+/* Remember Me and Forgot Password */
+.remember-forgot {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: end;
+}
+
+.remember-me {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.remember-me input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.remember-me .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color:white;
+  border:1px solid black;
+  border-radius: 50%;
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+
+
+.remember-me input:checked + .checkmark:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.remember-me input:checked + .checkmark:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+
+
+.forgot-password {
+  color: #00d5cd;
+  text-decoration: none;
+}
+
+/* OR Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  position: relative;
+  color: #777;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider span {
+  padding: 0 1rem;
+  background-color: white;
+}
+
+/* Social Login Button - Google */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+.google-btn img {
+  width: 50px;
+  margin-right: 1px;
+  background-color: #fff; /* White background behind Google logo */
+  padding: 0px;
+  border-radius: 3px;
+}
+
+.google-btn:hover {
+  background-color: #357ae8;
+}
+
+/* Login Button */
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid #00d5cd !important;
+  background-color: white;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #00d5cd;
+  transition: left 0.8s ease-in-out;
+  z-index: -1;
+}
+
+.button:hover:before {
+  left: 0%;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #00d5cd;
+  color: white;
+  transition: right 0.8s ease-in-out;
+  z-index: -1;
+}
+.button:hover{
+  color: white;
+}
+.button:hover:after {
+  right: 0%;
+}
+.Google-icon{
+  background-color: white;
+  padding:0.4rem 0.2rem;
+  border-top-left-radius: 10px;
+  margin:0px 12px 0px -4px;
+  border-bottom-left-radius: 10px;
+  /* height: 14px;
+  width: 14px; */
+} 

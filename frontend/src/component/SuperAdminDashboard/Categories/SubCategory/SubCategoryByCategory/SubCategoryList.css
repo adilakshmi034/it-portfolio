@@ -1,0 +1,10 @@
+.subcategorylist {
+    /* padding: 20px; */
+    /* max-width: 100% !important; */
+    width:100% ;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+.back-word{
+  margin-left: 5px;
+}

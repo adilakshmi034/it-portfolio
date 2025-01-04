@@ -1,0 +1,143 @@
+/* Sidebar container with full viewport height */
+.user-sidebar {
+  width: auto;
+  height: 100vh;
+  background-color: white;
+  padding: 15px;
+  /* margin-right: 20px; */
+  overflow-y: auto; 
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar collapsed state */
+.user-sidebar.collapsed {
+  width: 100px;
+  padding-left: 5px;
+}
+
+/* Hide the sidebar title when collapsed */
+.user-sidebar.collapsed h4 {
+  display: none;
+}
+.clearBtn{
+  text-align: center;
+  width: 232px;
+  background-color: #00cc88!important;
+  border-color: none;
+}
+/* Categories section */
+.category-section {
+  margin-bottom: 20px;
+}
+
+.category-item {
+  margin-bottom: 10px;
+}
+
+/* Category names */
+.category-name {
+  cursor: pointer;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subcategory-list {
+  padding-left: 15px;
+}
+
+/* Subcategory names */
+.subcategory-name {
+  padding: 3px 0;
+  cursor: pointer;
+}
+
+/* Icon for dropdown toggle in categories */
+.dropdown-icon {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* Filter section for price and rating */
+.filter-section {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Price filter inputs styling */
+.price-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Adds space between inputs */
+}
+
+.price-filter input {
+  width: 80%; /* Reduce the width of the input boxes */
+  padding: 5px;
+  margin-left: 10px; /* Adds space to the left of input boxes */
+}
+
+/* Collapsed categories */
+.collapsed-category {
+  justify-content: center;
+}
+
+/* Hide the entire category section when collapsed */
+.user-sidebar.collapsed .category-section {
+  display: none;
+}
+
+.ratingSelection {
+  width: 80%;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+/* Ensure the price filter and rating filter are hidden when sidebar is collapsed */
+.user-sidebar.collapsed .price-filter,
+.user-sidebar.collapsed .filter-section {
+  display: none;
+}
+
+/* Ensure the subcategory list is hidden in collapsed state */
+.user-sidebar.collapsed .subcategory-list {
+  display: none;
+}
+
+/* Hide the select dropdown completely in collapsed state */
+.user-sidebar.collapsed select {
+  display: none;
+}
+.section-container {
+  padding-bottom: 20px;
+  margin-bottom: 15px;  
+  border-bottom: 1px solid #ddd;
+}
+
+.section-container:last-child {
+  border-bottom: none; 
+}
+.user-sidebar {
+  width: 280px;
+  /* overflow: hidden; */
+}
+
+.section-container .collapsed-filter {
+  display: none;
+}
+.selected-subcategory {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #00d4cd;
+}
+.ratingSelection{
+  padding-right: 130px;
+  margin-left: 2px;
+}
+@media (max-width:550px){
+  .user-sidebar{
+    width: auto;
+    max-height: 600px;
+  }
+}
